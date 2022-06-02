@@ -32,7 +32,7 @@ app.use(passport.session());
 
 // set up app to use express handlebars
 app.set('views', path.join(__dirname, './views'));
-app.engine('.hbs', exphbs({
+app.engine('.hbs', exphbs.engine({
   defaultLayout: 'main',
   extname: '.hbs',
   layoutsDir: './views/layouts',
